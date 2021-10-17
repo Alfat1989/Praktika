@@ -1,4 +1,25 @@
-body {
-    background-color: green;
-    color: #ffffff;
+header {
+  background-color: white;
+  text-align: justify;
+}
+
+.hero-button {
+  background-color: #01996d;
+  padding: 5px;
+  border: solid 2px #01996d;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  background-color: #ffffff;
+  padding: 5px;
+  border: solid 2px #01996d;
+  border-radius: 5px;
+  color: #000000;
+}
+
+.hero-button:focus {
+  color: red;
 }
