@@ -1,0 +1,71 @@
+.header {
+  background-color: $headerHerocolor;
+  &__section {
+    // display: flex;
+    // justify-content: center;
+    margin: 0 20px;
+    padding-top: 37px;
+
+    @media screen and (min-width: 768px) {
+      margin: 0 34px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin: 0 46px;
+    }
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    text-decoration: none;
+    color: $H1color;
+    font-family: Titan One;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+}
+
+.header-menu {
+  display: flex;
+  margin-left: 110px;
+
+  &__link {
+    color: $whiteTextcolor;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.3;
+    &:hover,
+    &:focus {
+      color: $H1color;
+    }
+  }
+}
+
+.header-menu__item {
+  color: $blackTextcolor;
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
+.button {
+  border: 0px;
+  border-radius: 22px;
+}
+
+.header__button {
+  color: $H1color;
+  width: 159px;
+  height: 44px;
+  display: block;
+  margin-left: 110px;
+}
+
+.header__button::after {
+  content: "";
+}
